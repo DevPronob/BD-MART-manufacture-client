@@ -1,0 +1,33 @@
+[
+    {
+        "name": "MAXMECH Petrol",
+        "price": "120",
+        "description": "Easy to operate High torque Powerful motor Tool-less blade change and …",
+        "img": "https://i.ibb.co/2yNSFzb/119643-1525391077.webp",
+        "Available": "160",
+        "featured":true
+    },
+    {
+        "name": "Slotting Cutter Slitting Saw",
+        "price": "300",
+        "description": "It is 100% brand new,high quality and never mounted. This blade contai…",
+        "img": "https://i.ibb.co/N3L3cGb/1.jpg",
+        "Available": "205",
+        "featured":true
+    },
+    {
+        "name": "GCD 12 JL PROFESSIONAL",
+        "price": "400",
+        "description": "Precise results, less rework and up to 100% spark-free. Precise result…",
+        "img": "https://i.ibb.co/0BqBbb6/o126731v54-P-K-GCD12-JL-Dynamik.png",
+        "Available": "300"
+    },
+    {
+        "name": "Makita HM002GZ03 Cordless Demolition Hammer",
+        "price": "500",
+        "description": "40Vmax X2 (80Vmax) XGT BL AWS AVT SOFT NO LOAD 20.9 J Demolition Hammer, SDS-MAX Bits",
+        "img": "https://i.ibb.co/Tbgv1x1/p2.webp",
+        "Available": "300",
+        "featured":true
+    }
+]

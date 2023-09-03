@@ -1,0 +1,16 @@
+
+@media (max-width: 640px) {
+    .menu .li{
+        font-size: 23px !important;
+        font-weight: 500 !important;
+    }
+    .menu :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)){
+        font-size: 23px !important;
+        font-weight: 500 !important;
+    }
+    .drawer-toggle:checked ~ .drawer-side > *:not(.drawer-overlay) {
+        transform: translateX(0%);
+        background: white !important;
+    }
+  }
+

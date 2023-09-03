@@ -1,0 +1,21 @@
+.aboutSection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    margin:0px 100px 32px 100px ;
+}
+.aboutSection img{
+border-radius: 10px;
+}
+.aboutSection img{
+    width: 100%;
+}
+@media screen and (max-width: 820px) {
+    .aboutSection{
+        grid-template-columns:1fr;
+        margin: 0px 10px 20px 10px;
+    }
+    .imgSize{
+        display: none;
+    }
+    }
