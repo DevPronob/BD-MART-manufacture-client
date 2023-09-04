@@ -8,7 +8,7 @@ const AdddReview = () => {
             comment:data.text,
             rating:data.rating
           }
-          fetch('http://localhost:5000/api/review', {
+          fetch('https://manufacture-site-server-bice.vercel.app/api/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

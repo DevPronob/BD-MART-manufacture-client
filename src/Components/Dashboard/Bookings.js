@@ -19,7 +19,7 @@ console.log(data)
         authorization: `Bearer ${localStorage.getItem('accessToken')}`,
         // Add any other headers you need
       };
-    const response = await fetch(`http://localhost:5000/api/bookings/${email}`, { headers });
+    const response = await fetch(`https://manufacture-site-server-bice.vercel.app/api/bookings/${email}`, { headers });
 
     if (!response.ok) {
       

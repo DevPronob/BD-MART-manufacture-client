@@ -17,7 +17,7 @@ const ToolsDetails = () => {
     console.log(open)
     console.log(id,"id")
     const fetchProductById = async (id) => {
-        const response = await fetch(`http://localhost:5000/api/tools/${id}`);
+        const response = await fetch(`https://manufacture-site-server-bice.vercel.app/api/tools/${id}`);
         const data = await response.json();
         return data;
       };
@@ -27,7 +27,7 @@ const ToolsDetails = () => {
       );
 
       const createPostMutation = useMutation(async (postData) => {
-        const response = await fetch('http://localhost:5000/api/bookings', {
+        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/bookings', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

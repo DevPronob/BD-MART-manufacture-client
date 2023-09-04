@@ -11,7 +11,7 @@ const Payment = () => {
     const { data, isLoading, isError } = useQuery(['tool', params.id], fetchToolById);
 
   async function fetchToolById() {
-    const response = await fetch(`http://localhost:5000/api/bookings/book/${params.id}`);
+    const response = await fetch(`https://manufacture-site-server-bice.vercel.app/api/bookings/book/${params.id}`);
 
     if (!response.ok) {
       throw new Error(`Network response was not ok: ${response.statusText}`);

@@ -5,7 +5,7 @@ import Swal from 'sweetalert2';
 import ReactStars from "react-rating-stars-component";
 const ReviewSection = () => {
     const fetchPosts = async () => {
-        const response = await fetch('http://localhost:5000/api/review');
+        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/review');
         const data = await response.json();
         return data;
       };

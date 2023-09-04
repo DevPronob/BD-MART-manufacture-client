@@ -19,7 +19,7 @@ const CheckoutForm = ({cart}) => {
     useEffect(() => {
         const fetchPaymentIntent = async () => {
           try {
-            const response = await fetch('http://localhost:5000/create-payment-intent/', {
+            const response = await fetch('https://manufacture-site-server-bice.vercel.app/create-payment-intent/', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const CheckoutForm = ({cart}) => {
               },
               body: JSON.stringify(payment),
           };
-          fetch('http://localhost:5000/payments', requestOptions)
+          fetch('https://manufacture-site-server-bice.vercel.app/payments', requestOptions)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -125,7 +125,7 @@ const CheckoutForm = ({cart}) => {
 
 
 
-  axios.put(`http://localhost:5000/api/bookings/update/${cart._id}`, {
+  axios.put(`https://manufacture-site-server-bice.vercel.app/api/bookings/update/${cart._id}`, {
   paid: true,
   transactionId: paymentIntent.id,
 })

@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 const ToolList = () => {
     const navigate =useNavigate()
     const fetchPosts = async () => {
-        const response = await fetch('http://localhost:5000/api/tools');
+        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/tools');
         const data = await response.json();
         return data;
       };

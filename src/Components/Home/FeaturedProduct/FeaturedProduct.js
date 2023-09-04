@@ -11,7 +11,7 @@ const FeaturedProduct = () => {
     navigate(`/tool/${id}`)
   }
     const fetchPosts = async () => {
-        const response = await fetch('http://localhost:5000/api/tools/featured');
+        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/tools/featured');
         const data = await response.json();
         return data;
       };

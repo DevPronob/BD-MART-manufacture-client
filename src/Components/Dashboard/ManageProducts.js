@@ -13,7 +13,7 @@ const ManageProducts = () => {
             'Content-Type': 'application/json'
         };
     
-        const response = await fetch('http://localhost:5000/api/tools', {
+        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/tools', {
             headers: headers
         });
     
