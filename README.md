@@ -14,4 +14,9 @@ BD_TOOL is a Drill Machine tool websit and processes involved in running the day
 - User Can Purchase Product By Card
 - used mongodb mongoose  for stored all data
 - for secure data jwt Implement
+- Admin login and authentication.Manage hotels (add, edit, delete).View and manage user bookings.
 - used dotenv for secure authenticatation email and password
+
+Admin credential 
+Email-user@gmail.com 
+Password-123456
