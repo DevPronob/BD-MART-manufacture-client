@@ -25,6 +25,7 @@ function App() {
   <>
   <Navbar></Navbar>
   {/* lg:px-32 px-8 text-center */}
+  {/* data */}
     <div className="">
      <Routes>
         <Route path="/" element={ <Home></Home>} />
