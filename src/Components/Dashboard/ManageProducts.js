@@ -3,7 +3,7 @@ import { useMutation, useQuery, useQueryClient } from 'react-query';
 const ManageProducts = () => {
     // const [product,setProduct] =useState([])
     // useEffect(() =>{
-    //     fetch('http://localhost:5000/api/tools')
+    //     fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools')
     //     .then(res =>res.json())
     //     .then(data =>setProduct(data))
     // },[])
@@ -13,7 +13,7 @@ const ManageProducts = () => {
             'Content-Type': 'application/json'
         };
     
-        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/tools', {
+        const response = await fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools', {
             headers: headers
         });
     
@@ -34,7 +34,7 @@ const ManageProducts = () => {
             'Content-Type': 'application/json'
         };
     
-        await fetch(`http://localhost:5000/api/tools/delete/${userId}`, {
+        await fetch(`https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools/delete/${userId}`, {
             method: 'DELETE',
             headers: headers
         });

@@ -30,7 +30,7 @@ const AddTool = () => {
 
           }
           console.log(product, "console")
-          fetch('https://manufacture-site-server-bice.vercel.app/api/tools', {
+          fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

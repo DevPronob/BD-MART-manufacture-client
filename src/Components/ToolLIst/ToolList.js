@@ -3,11 +3,12 @@ import { useQuery } from 'react-query'
 import { useNavigate } from 'react-router-dom'
 import LoadingSpinner from '../../Shared/LoadingSpinner/LoadingSpinner'
 import Swal from 'sweetalert2'
+import Footer from '../../Shared/Footer/Footer'
 
 const ToolList = () => {
     const navigate =useNavigate()
     const fetchPosts = async () => {
-        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/tools');
+        const response = await fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools');
         const data = await response.json();
         return data;
       };
@@ -60,7 +61,8 @@ const searchHandler = (event) => {
     
   
   return (
-    <div className='lg:px-32 px-8 text-center'>
+    <div>
+      <div className='lg:px-32 px-8 text-center'>
         <h3 className='text-3xl text-center mt-12 font-bold'>All Products </h3>
 
         <div className=" flex justify-center my-10 items-center ">
@@ -76,7 +78,7 @@ const searchHandler = (event) => {
                 onChange={(e) => handleSearchQueryChange(e.target.value)}
               />
               <div className="ms:flex items-center pl-2 rounded-lg  mx-auto ">
-                <button className="bg-[#ff3633] text-white font-bold text-base rounded-lg px-4 py-2 font-mono">
+                <button className="bg-[#ff3633] ms-[-28px] text-white font-bold text-base rounded-lg px-4 py-2 font-mono">
                   Search
                 </button>
               </div>
@@ -130,6 +132,8 @@ const searchHandler = (event) => {
             }
         </div>
       
+    </div>
+    <Footer></Footer>
     </div>
   )
 }

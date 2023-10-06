@@ -7,7 +7,7 @@ const useToken =user =>{
         const currentUser = {email: email};
         if(email){
             if(email){
-                fetch(`https://manufacture-site-server-bice.vercel.app/api/user`, {
+                fetch(`https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/user`, {
                     method:'POST',
                     headers: {
                         'content-type': 'application/json'

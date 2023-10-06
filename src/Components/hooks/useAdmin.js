@@ -14,7 +14,7 @@ const useAdmin = () => {
         try {
           const token = "your_jwt_token_here"; // Replace with your actual JWT token
           const response = await fetch(
-            `https://manufacture-site-server-bice.vercel.app/api/user/users/admin/${user.email}`,
+            `https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/user/users/admin/${user.email}`,
             {
               headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`,

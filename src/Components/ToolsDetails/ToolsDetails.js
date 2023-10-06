@@ -7,6 +7,7 @@ import BookingModal from '../../Shared/BookingModal/BookingModal';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../Firebase/Firebase.init';
 import { useForm } from 'react-hook-form';
+import Footer from '../../Shared/Footer/Footer';
 
 const ToolsDetails = () => {
     const { id } = useParams();
@@ -17,7 +18,7 @@ const ToolsDetails = () => {
     console.log(open)
     console.log(id,"id")
     const fetchProductById = async (id) => {
-        const response = await fetch(`https://manufacture-site-server-bice.vercel.app/api/tools/${id}`);
+        const response = await fetch(`https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/tools/${id}`);
         const data = await response.json();
         return data;
       };
@@ -27,7 +28,7 @@ const ToolsDetails = () => {
       );
 
       const createPostMutation = useMutation(async (postData) => {
-        const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/bookings', {
+        const response = await fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/bookings', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -164,6 +165,7 @@ const ToolsDetails = () => {
   </form>
 </dialog>
            </div>
+           <Footer></Footer>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 
 const AllBookings = () => {
   const fetchPosts = async () => {
-    const url = 'https://manufacture-site-server-bice.vercel.app/api/bookings';
+    const url = 'https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/bookings';
     const headers = new Headers({
       'Content-Type': 'application/json',
         authorization: `Bearer ${localStorage.getItem('accessToken')}`,

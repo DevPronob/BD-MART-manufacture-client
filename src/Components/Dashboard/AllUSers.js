@@ -7,7 +7,7 @@ const AllUSers = () => {
     // const [user, loading, error2] = useAuthState(auth);
 // Make a GET request to fetch the data
 const fetchUserData = async () => {
-    const response = await fetch('https://manufacture-site-server-bice.vercel.app/api/user', {
+    const response = await fetch('https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/user', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const fetchUserData = async () => {
                 'Content-Type': 'application/json',
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`,
             };
-            fetch(`https://manufacture-site-server-bice.vercel.app/api/user/users/admin/${user._id}`, {
+            fetch(`https://bd-mart-manufacture-server-21nsdnrz5-devpronob.vercel.app/api/user/users/admin/${user._id}`, {
                 method: 'PATCH',
                 headers: headers
             })

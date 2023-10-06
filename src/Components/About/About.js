@@ -1,91 +1,83 @@
-import React from 'react'
-import "./About.css";
-import { Link } from 'react-router-dom';
+import React from 'react';
+import './About.css'
+import Footer from '../../Shared/Footer/Footer';
 const About = () => {
   return (
     <div>
-    <div className="text-[#ff0336] my-12 font-bold   text-center text-3xl">
-      About US
-    </div>
-    <div className="aboutSection">
-      <div className="text-center my-auto mx-10">
-        <p className="font-bold text-2xl text-[#ff0336]   underline underline-offset-8">
-          WHO WE ARE
-        </p>
-        <h2 className="font-bold my-4   text-xl">
-          Customer Satisfaction is our First Priority
-        </h2>
-        <p className="font-bold ">
-          Having happy customers is one of the easiest ways to ensure a
-          successful business. Customer satisfaction is an indicator of the
-          positive experience that a consumer has when interacting with a
-          business.
-        </p>
-        <Link to="/contact">
-          <button className="btn my-5  btn-outline hover:bg-[#ff0336] hover:text-white">
-            Contact Us
-          </button>
-        </Link>
-      </div>
+      {/* <p>Footer Component</p> */}
+      <div className='hero__footer'>
+        <div className='footer__header__content'>
+        <h2>About Us</h2>
+        <div class="leading-6">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8"> 
+    <nav>
+      <ul class="flex m-0 items-center p-0">
+        <li class="text-left">
+          <a href="#" title="" class="cursor-pointer text-gray-400 hover:text-gray-900">
+            {/* <!-- Heroicons - Home --> */}
+            <svg class="block h-5 w-5 align-middle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </a>
+        </li>
 
-      <div className=" imgSize ">
-        <img src="https://i.ibb.co/VwHRxCs/1.jpg" alt="" />
-      </div>
-    </div>
-    <div className="aboutSection">
-      <div>
-        <img src="https://i.ibb.co/McKkvmm/2.jpg" alt="" />
-      </div>
+        {/* <li class="flex items-center text-left">
+          <svg class="block h-5 w-5 align-middle text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
+          </svg>
 
-      <div className="text-center my-auto mx-10">
-        <p className="font-bold text-[#ff0336] mt-4 text-2xl    underline underline-offset-8">
-          Our Team Work
-        </p>
-        <p className=" mt-4 font-bold ">
-          A team comprises a group of people, and when you’re embarking on big
-          projects, it gets almost impossible to do everything alone.It is
-          important to start with a teamwork essay introduction that states
-          its importance and different uses.
-        </p>
-        <Link to="/contact">
-          <button className="btn my-5 hover:bg-[#ff0336] hover:text-white   btn-outline">
-            Contact Us
-          </button>
-        </Link>
-      </div>
-    </div>
-    <div className="aboutSection">
-      <div className="text-center my-auto mx-10">
-        <p className=" text-2xl text-[#ff0336] font-bold  underline underline-offset-8">
-          What is Our Mission?
-        </p>
+          <a href="#" title="" class="cursor-pointer text-sm font-normal leading-5 text-gray-400 hover:text-gray-900"> Analytics </a>
+        </li> */}
 
-        <p className=" mt-4 font-bold ">
-          We believe in our product.We integrate systems and technologies
-          designed by our team with the most advanced technologies available
-          to deliver more reliable and efficient energy projects.Our global
-          platform is our strength.
-        </p>
-        <Link to="/contact">
-          <button className="btn my-5 hover:bg-[#ff0336] hover:text-white  btn-outline">
-            Contact Us
-          </button>
-        </Link>
-      </div>
+        <li class="flex items-center text-left">
+          <svg class="block h-5 w-5 align-middle text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
+          </svg>
 
-      <div>
-        <img src="https://i.ibb.co/pn4xxXd/3.jpg" alt="" />
-      </div>
-    </div>
-    <div className="mb-12 mt-20 text-center">
-      <Link to="/dashboard/add-review">
-        <button className="btn mb-5 text-xl border-purple-900 hover:bg-[#ff0336] hover:text-white  btn-outline">
-          Review Us
-        </button>
-      </Link>
-    </div>
+          <a href="#" title="" class="cursor-pointer text-sm font-normal leading-5 text-gray-400 hover:text-gray-900">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    {/* <p class="mt-5 text-lg font-bold leading-7 text-gray-800">About</p> */}
   </div>
-  )
+</div>
+
+        </div>
+      </div>
+
+<div className='main__container pb-18'>
+
+
+<div className='about__company'>
+<div className='about__company__img'>
+<img src="https://manufacturer.stylemixthemes.com/industrial/wp-content/uploads/sites/2/2018/08/Fotolia_68431323_Subscription_Monthly_M-660x439.jpg" alt="Description of the image" />
+</div>
+<div className='about__company__content'>
+  <h2>Welcome</h2>
+  <p>Textile is a global non-profit that works closely with our members to drive industry transformation in preferred fibers, integrity and standards and responsible supply networks. We identify and share best practices regarding farming, materials, processing, traceability and product end-of-life in order to reduce the textile industry’s impact on the world’s water, soil and air, and the human population.</p>
+</div>
+
+
+<div className='about__company__content'>
+<h2>Founder’s Note</h2>
+  <p>Members may be new to sustainability practices or want to take their strategy to the next level. 
+<br/>
+CEO: Steven Rogers</p>
+</div>
+<div className='about__company__img'>
+<img src="https://manufacturer.stylemixthemes.com/industrial/wp-content/uploads/sites/2/2018/08/Fotolia_68431323_Subscription_Monthly_M-660x439.jpg" alt="Description of the image" />
+</div>
+</div>
+
+
+
+
+
+</div>
+<Footer></Footer>
+    </div>
+  );
 }
 
-export default About
+export default About;

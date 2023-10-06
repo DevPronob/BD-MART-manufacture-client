@@ -1,21 +1,16 @@
 import React from 'react'
-
+import './Newslatter.css'
 const NewsletterSection = () => {
   return (
-    <div className='py-8'>
-      <div class="mx-auto my-10 max-w-screen-xl rounded-3xl border border-gray-600 px-4 py-10">
-  <h2 class="text-center text-4xl font-bold sm:text-5xl">Get our Offers</h2>
-  <p class="mt-8 text-center text-3xl font-light">Available in PDF, ePub & mobi</p>
-  <div class="mx-auto mt-8 flex max-w-2xl flex-col border-gray-600 bg-white sm:flex-row sm:rounded-full sm:border">
-    <input class="m-2 h-12 rounded-full px-4 text-gray-500 ring ring-red-400 sm:w-full sm:ring-0 focus:outline-none focus:ring" placeholder="Enter your email" type="email" name="email" />
-    <button class="shrink-0 m-2 rounded-full bg-red-600 px-8 py-3 font-medium text-white focus:bg-red-700 focus:outline-none hover:bg-red-700">Get Now</button>
-  </div>
-
-  <div class="mt-8 flex justify-center">
-    <label class="mb-4 flex items-center text-gray-700" for="">
-      <input class="accent-blue-700 mr-3 h-5 w-5" type="checkbox" name="" />
-      <span>I agree to MixBake's <a class="font-medium text-blue-500" href="">Privacy Policy</a> and <a class="font-medium text-blue-500" href="">Terms of Use</a></span>
-    </label>
+    <div className='pb-8 mt-20'>
+      <div className="hero h-[500px]" style={{backgroundImage: 'url(https://templatekit.jegtheme.com/industrix/wp-content/uploads/sites/408/2023/09/metal-industry-background-manufacturing-hall--e1693983935216.jpg)'}}>
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">LET'S TALK ABOUT PROJECT!</h1>
+      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn-custom">Get Started</button>
+    </div>
   </div>
 </div>
 

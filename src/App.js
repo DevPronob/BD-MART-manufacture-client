@@ -19,14 +19,19 @@ import AllBookings from './Components/Dashboard/AllBookings';
 import Payment from './Components/Dashboard/Payment/Payment';
 import ManageProducts from './Components/Dashboard/ManageProducts';
 import Contact from './Components/Contact/Contact';
-
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 function App() {
   return (
   <>
+  {/* <MessengerCustomerChat
+    pageId="<PAGE_ID>"
+    appId="<APP_ID>"
+    htmlRef="<REF_STRING>"
+  />, */}
   <Navbar></Navbar>
   {/* lg:px-32 px-8 text-center */}
   {/* data */}
-    <div className="">
+    <div className="app">
      <Routes>
         <Route path="/" element={ <Home></Home>} />
         <Route path="/login" element={<Login></Login>} />

@@ -6,6 +6,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import LoadingSpinner from '../../Shared/LoadingSpinner/LoadingSpinner';
 import useToken from '../hooks/useToken';
+import Footer from '../../Shared/Footer/Footer';
 const Login = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [updateProfile, updating, error2] = useUpdateProfile(auth);
@@ -47,7 +48,8 @@ const onSubmit = async data => {
       return <LoadingSpinner></LoadingSpinner>
     }
   return (
-    <div className='flex justify-center items-center mt-16 h-100'>
+    <div>
+      <div className='flex justify-center items-center mt-16 h-100'>
         <div class="card w-96 bg-base-100 shadow-xl">
     <div class="card-body">
       <h2 class=" text-center font-bold text-2xl">Login</h2>
@@ -113,6 +115,8 @@ const onSubmit = async data => {
   </div>
     </div>
   </div>
+  <Footer></Footer>
+    </div>
   )
 }
 
